@@ -1,0 +1,36 @@
+.table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  min-height: 271px;
+  width: 600px;
+  margin-bottom: 40px;
+}
+
+.table td,
+.table th {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.table th {
+  background-color: #722ed1;
+  color: white;
+  border-bottom: 2px solid #000;
+}
+
+.table th:nth-child(2) {
+  width: 200px;
+}
+
+.sortButton {
+  cursor: pointer;
+  position: relative;
+  padding-right: 15px;
+}
+.sortButton::after {
+  content: '\2666';
+  top: 0;
+  right: 0;
+  position: absolute;
+}
